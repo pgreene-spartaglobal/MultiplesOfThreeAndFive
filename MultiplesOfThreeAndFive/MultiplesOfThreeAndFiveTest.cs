@@ -11,6 +11,12 @@ namespace MultiplesOfThreeAndFive.Test
     [TestFixture]
     class MultiplesOfThreeAndFiveTest
     {
+        MultiplesOfThreeAndFiveClass mtf = new MultiplesOfThreeAndFiveClass();
 
+        [Test]
+        public void TestMultiplesOfThreeAndFive()
+        {
+            Assert.AreEqual(23, mtf.SumMultiplesOfThreeAndFive(10));
+        }
     }
 }
